@@ -1,13 +1,24 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app" class="h-full">
+    <top-bar />
     <router-view />
   </div>
 </template>
 
-<style lang="scss">
-@import "./main.scss";
+<script>
+import TopBar from "@/components/TopBar.vue";
+
+export default {
+  name: "app",
+  components: {
+    TopBar
+  }
+};
+</script>
+
+<style>
+html,
+body {
+  @apply h-full w-full;
+}
 </style>
