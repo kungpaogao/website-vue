@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full fixed bg-transparent">
     <nav class="flex justify-between text-text">
       <div class="flex flex-row">
         <a href="https://www.instagram.com/gao.visuals/">

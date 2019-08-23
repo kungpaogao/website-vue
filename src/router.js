@@ -12,6 +12,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/colors",
+      name: "colors",
+      component: () => import("./views/Colors.vue")
     }
   ]
 });

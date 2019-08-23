@@ -1,8 +1,8 @@
 <template>
-  <div class="home content-center">
+  <div class="home topbar-comp content-center">
     <div class="container max-w-xs my-auto mx-auto flex flex-col p-5">
-      <h1 class="text-2xl font-extrabold font-head text-accent-500">Hello!</h1>
-      <h2 class="text-3xl font-extrabold font-head">I'm Andrew Gao.</h2>
+      <h1 class="text-3xl font-extrabold font-head text-accent-500">Hello!</h1>
+      <h2 class="text-4xl font-extrabold font-head">I'm Andrew Gao.</h2>
       <h3 class="text-md font-body lowercase">CS & Stat @ Cornell</h3>
       <doing class="mt-10" />
     </div>
@@ -19,3 +19,7 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+@import "../styles/global.css";
+</style>
