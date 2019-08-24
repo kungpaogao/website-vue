@@ -11,6 +11,9 @@ module.exports = {
       accent: colors.blue,
       text: "#001F3F"
     },
+    zIndex: {
+      "-10": "-10"
+    },
     extend: {}
   },
   variants: {},
