@@ -5,9 +5,6 @@
       <h2 class="text-4xl font-extrabold font-head">I'm Andrew Gao.</h2>
       <h3 class="text-md font-body lowercase">CS & Stat @ Cornell</h3>
       <doing class="mt-10" />
-      <router-link to="colors" class="mt-10 font-body"
-        >go to colors >></router-link
-      >
     </div>
   </div>
 </template>

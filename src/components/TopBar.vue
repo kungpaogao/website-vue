@@ -14,10 +14,10 @@
       </div>
       <div
         class="font-body link lowercase"
-        @mouseenter="resume = 'coming soon'"
-        @mouseleave="resume = 'resume'"
+        @mouseenter="resume = '(Sep 2019) Resume'"
+        @mouseleave="resume = 'Resume'"
       >
-        {{ resume }}
+        <a href="/resume.pdf">{{ resume }}</a>
       </div>
     </nav>
   </div>
@@ -30,7 +30,7 @@ export default {
   name: "TopBar",
   data: function() {
     return {
-      resume: "resume"
+      resume: "Resume"
     };
   },
   mounted: function() {
