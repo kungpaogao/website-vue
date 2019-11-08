@@ -30,12 +30,12 @@ export default {
   name: "TopBar",
   data: function() {
     return {
-      resume: "Resume"
+      resume: "Resume",
     };
   },
   mounted: function() {
     feather.replace();
-  }
+  },
 };
 </script>
 
