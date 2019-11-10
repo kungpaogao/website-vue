@@ -18,8 +18,8 @@ export default {
   name: "home",
   components: {
     Doing,
-    Actions
-  }
+    Actions,
+  },
 };
 </script>
 

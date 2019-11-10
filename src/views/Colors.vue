@@ -24,12 +24,12 @@ export default {
   name: "colors",
   data() {
     return {
-      color: "fff"
+      color: "fff",
     };
   },
   mounted: function() {
     feather.replace();
-  }
+  },
 };
 </script>
 
