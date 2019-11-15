@@ -19,7 +19,7 @@ export default {
   components: {
     CityPanel,
   },
-  data: function() {
+  data() {
     return {
       cities: [
         { name: "Washington, DC", woeid: "2514815" },
