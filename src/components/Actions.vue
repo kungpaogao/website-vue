@@ -1,7 +1,7 @@
 <template>
   <div class="z-50 w-full bg-transparent">
     <div class="flex flex-row">
-      <button :key="action.key" v-for="action in actions" class="link">
+      <button :key="action.icon" v-for="action in actions" class="link">
         <a :href="action.link" :title="action.title">
           <i :data-feather="action.icon" class="ext" :alt="action.icon" />
         </a>
@@ -32,19 +32,16 @@ export default {
       resume: "Resume",
       actions: [
         {
-          key: "ig",
           icon: "instagram",
           link: "https://www.instagram.com/gao.visuals/",
           title: "Go to my photography Instagram @gao.visuals",
         },
         {
-          key: "li",
           icon: "linkedin",
           link: "https://www.linkedin.com/in/andrewxgao/",
           title: "Go to my LinkedIn profile",
         },
         {
-          key: "gh",
           icon: "github",
           link: "https://github.com/kungpaogao/",
           title: "Go to my GitHub profile",
