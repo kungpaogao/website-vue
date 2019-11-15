@@ -11,12 +11,22 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
     },
     {
       path: "/colors",
       name: "colors",
-      component: () => import("./views/Colors.vue")
-    }
-  ]
+      component: () => import("./views/Colors.vue"),
+    },
+    {
+      path: "/citylist",
+      name: "citylist",
+      component: () => import("./views/CityList.vue"),
+    },
+    {
+      path: "/city/:id",
+      name: "city",
+      component: () => import("./views/Weather.vue"),
+    },
+  ],
 });
