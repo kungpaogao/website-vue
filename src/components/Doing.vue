@@ -10,39 +10,28 @@
       <li>{{ location }}</li>
       <li>
         {{ "Making: " }}
-        <span :key="it.key" v-for="it in making">
-          <a v-if="it.link" :href="it.link" :title="it.title">{{ it.desc }}</a>
-          <span v-else>{{ it.desc }}</span>
-          <span>{{ it.key !== making[making.length - 1].key ? sep : "" }}</span>
-        </span>
+        <doing-list :list="making" />
       </li>
       <li>
         {{ "Learning: " }}
-        <span :key="it.key" v-for="it in learning">
-          <a v-if="it.link" :href="it.link" :title="it.title">{{ it.desc }}</a>
-          <span v-else>{{ it.desc }}</span>
-          <span>{{
-            it.key !== learning[learning.length - 1].key ? sep : ""
-          }}</span>
-        </span>
+        <doing-list :list="learning" />
       </li>
       <li>
         {{ "Reading: " }}
-        <span :key="it.key" v-for="it in reading">
-          <a v-if="it.link" :href="it.link" :title="it.title">{{ it.desc }}</a>
-          <span v-else>{{ it.desc }}</span>
-          <span>{{
-            it.key !== reading[reading.length - 1].key ? sep : ""
-          }}</span>
-        </span>
+        <doing-list :list="reading" />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import DoingList from "./DoingList";
+
 export default {
   name: "Doing",
+  components: {
+    DoingList,
+  },
   data: function() {
     return {
       making: [
@@ -67,10 +56,7 @@ export default {
       ],
       reading: [{ key: "tex", desc: "Textbooks", link: "", title: "" }],
       location: "Cornell",
-      sep: ", ",
     };
   },
 };
 </script>
-
-<style></style>
