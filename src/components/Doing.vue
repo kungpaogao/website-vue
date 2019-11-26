@@ -50,9 +50,19 @@ export default {
         },
       ],
       learning: [
-        { key: "rea", desc: "React", link: "", title: "" },
-        { key: "tai", desc: "Tailwind", link: "", title: "" },
-        { key: "kot", desc: "Kotlin", link: "", title: "" },
+        { key: "rea", desc: "React", link: "https://reactjs.org/", title: "" },
+        {
+          key: "tai",
+          desc: "Tailwind",
+          link: "https://tailwindcss.com/",
+          title: "",
+        },
+        {
+          key: "kot",
+          desc: "Kotlin",
+          link: "https://kotlinlang.org/",
+          title: "",
+        },
       ],
       reading: [{ key: "tex", desc: "Textbooks", link: "", title: "" }],
       location: "Cornell",
