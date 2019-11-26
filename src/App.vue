@@ -1,18 +1,13 @@
 <template>
   <div id="app" class="h-full">
-    <!-- <top-bar /> -->
-    <router-view class="mt-3" />
+    <router-view class="pt-3" />
   </div>
 </template>
 
 <script>
-// import TopBar from "@/components/TopBar.vue";
-
 export default {
   name: "app",
-  components: {
-    // TopBar,
-  },
+  components: {},
 };
 </script>
 
