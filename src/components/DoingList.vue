@@ -12,7 +12,7 @@
 export default {
   name: "DoingList",
   props: ["list"],
-  data: function() {
+  data() {
     return { sep: ", " };
   },
 };
