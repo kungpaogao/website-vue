@@ -32,7 +32,8 @@ export default {
   components: {
     DoingList,
   },
-  data: function() {
+  props: ["data"],
+  data() {
     return {
       making: [
         { key: "web", desc: "this website", link: "", title: "" },
@@ -47,6 +48,12 @@ export default {
           desc: "N2N inventory",
           link: "https://www.youtube.com/watch?v=Ft4LrRe-ZK0",
           title: "Watch a video on the project",
+        },
+        {
+          key: "flx",
+          desc: "Flux",
+          link: "https://github.com/cornell-dti/campus-density-android",
+          title: "Visit the GitHub repo",
         },
       ],
       learning: [

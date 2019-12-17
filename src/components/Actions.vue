@@ -27,7 +27,7 @@ import feather from "feather-icons";
 
 export default {
   name: "Actions",
-  data: function() {
+  data() {
     return {
       resume: "Resume",
       actions: [
@@ -49,7 +49,7 @@ export default {
       ],
     };
   },
-  mounted: function() {
+  mounted() {
     feather.replace();
   },
 };

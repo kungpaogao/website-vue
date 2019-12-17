@@ -28,12 +28,12 @@ import feather from "feather-icons";
 
 export default {
   name: "TopBar",
-  data: function() {
+  data() {
     return {
       resume: "Resume",
     };
   },
-  mounted: function() {
+  mounted() {
     feather.replace();
   },
 };

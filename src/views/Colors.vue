@@ -21,13 +21,13 @@
 import feather from "feather-icons";
 
 export default {
-  name: "colors",
+  name: "Colors",
   data() {
     return {
       color: "fff",
     };
   },
-  mounted: function() {
+  mounted() {
     feather.replace();
   },
 };
