@@ -35,12 +35,11 @@ export default {
   data: function() {
     return {
       making: [
-        { key: "web", desc: "this website", link: "", title: "" },
         {
-          key: "tak",
-          desc: "takk",
-          link: "https://takksolution.com/",
-          title: "Visit the takk website",
+          key: "flu",
+          desc: "Flux",
+          link: "https://github.com/cornell-dti/campus-density-android/",
+          title: "Link to the GitHub repository",
         },
         {
           key: "n2n",
@@ -48,23 +47,50 @@ export default {
           link: "https://www.youtube.com/watch?v=Ft4LrRe-ZK0",
           title: "Watch a video on the project",
         },
+        { key: "web", desc: "this website", link: "", title: "" },
       ],
       learning: [
-        { key: "rea", desc: "React", link: "https://reactjs.org/", title: "" },
+        {
+          key: "arc",
+          desc: "Android architecture",
+          link: "https://developer.android.com/jetpack/docs/guide",
+          title: "Link to a quick guide",
+        },
+        {
+          key: "kot",
+          desc: "Kotlin",
+          link: "https://kotlinlang.org/",
+          title: "Link the Kotlin's website",
+        },
+        {
+          key: "rea",
+          desc: "React",
+          link: "https://reactjs.org/",
+          title: "Link to React's website",
+        },
         {
           key: "tai",
           desc: "Tailwind",
           link: "https://tailwindcss.com/",
           title: "",
         },
+      ],
+      reading: [
         {
-          key: "kot",
-          desc: "Kotlin",
-          link: "https://kotlinlang.org/",
-          title: "",
+          key: "new",
+          desc: "New Testament",
+          link:
+            "https://classes.cornell.edu/browse/roster/SP20/class/CLASS/2613",
+          title: "Link to my Classics class",
+        },
+        {
+          key: "vis",
+          desc: "Visual Studies",
+          link:
+            "https://classes.cornell.edu/browse/roster/SP20/class/VISST/2000",
+          title: "Link to my visual studies class",
         },
       ],
-      reading: [{ key: "tex", desc: "Textbooks", link: "", title: "" }],
       location: "Cornell",
     };
   },

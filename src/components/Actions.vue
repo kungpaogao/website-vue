@@ -8,8 +8,8 @@
       </button>
       <button
         class="font-body link lowercase"
-        @mouseenter="resume = 'Resume [oct]'"
-        @mouseleave="resume = 'Resume'"
+        @mouseenter="resume = RESUME_HOVER"
+        @mouseleave="resume = RESUME_DEFAULT"
       >
         <a
           target="_blank"
@@ -29,12 +29,14 @@ export default {
   name: "Actions",
   data: function() {
     return {
+      RESUME_DEFAULT: "Resume",
+      RESUME_HOVER: "Resume [old]",
       resume: "Resume",
       actions: [
         {
-          icon: "instagram",
-          link: "https://www.instagram.com/gao.visuals/",
-          title: "Go to my photography Instagram @gao.visuals",
+          icon: "github",
+          link: "https://github.com/kungpaogao/",
+          title: "Go to my GitHub profile",
         },
         {
           icon: "linkedin",
@@ -42,9 +44,9 @@ export default {
           title: "Go to my LinkedIn profile",
         },
         {
-          icon: "github",
-          link: "https://github.com/kungpaogao/",
-          title: "Go to my GitHub profile",
+          icon: "instagram",
+          link: "https://www.instagram.com/gao.visuals/",
+          title: "Go to my photography Instagram @gao.visuals",
         },
       ],
     };
