@@ -8,15 +8,15 @@
     <ul class="pl-5 list-disc font-body lowercase">
       <!-- TODO: make this pull from API/database -->
       <li>{{ location }}</li>
-      <li>
+      <li v-if="making.length > 0">
         {{ "Making: " }}
         <doing-list :list="making" />
       </li>
-      <li>
+      <li v-if="learning.length > 0">
         {{ "Learning: " }}
         <doing-list :list="learning" />
       </li>
-      <li>
+      <li v-if="reading.length > 0">
         {{ "Reading: " }}
         <doing-list :list="reading" />
       </li>
@@ -39,13 +39,13 @@ export default {
           key: "flu",
           desc: "Flux",
           link: "https://github.com/cornell-dti/campus-density-android/",
-          title: "Link to the GitHub repository",
+          title: "Link to the GitHub repository for Flux Android",
         },
         {
           key: "n2n",
           desc: "N2N inventory",
           link: "https://www.youtube.com/watch?v=Ft4LrRe-ZK0",
-          title: "Watch a video on the project",
+          title: "Watch a video about the Neighbor to Neighbor project",
         },
         { key: "web", desc: "this website", link: "", title: "" },
       ],
@@ -54,7 +54,7 @@ export default {
           key: "arc",
           desc: "Android architecture",
           link: "https://developer.android.com/jetpack/docs/guide",
-          title: "Link to a quick guide",
+          title: "Link to a quick guide about Android architecture",
         },
         {
           key: "kot",
@@ -75,22 +75,7 @@ export default {
           title: "",
         },
       ],
-      reading: [
-        {
-          key: "new",
-          desc: "New Testament",
-          link:
-            "https://classes.cornell.edu/browse/roster/SP20/class/CLASS/2613",
-          title: "Link to my Classics class",
-        },
-        {
-          key: "vis",
-          desc: "Visual Studies",
-          link:
-            "https://classes.cornell.edu/browse/roster/SP20/class/VISST/2000",
-          title: "Link to my visual studies class",
-        },
-      ],
+      reading: [],
       location: "Cornell",
     };
   },
