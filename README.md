@@ -1,4 +1,6 @@
-# website
+# website-vue (previously known as just "website")
+
+This was my old personal website :')
 
 ## Project setup
 ```
